@@ -1,0 +1,101 @@
+#root {
+  width: 100%;
+  margin: 0;
+  --rp-dark-blue: #204c61;
+  --rp-blue: #307291;
+  --rp-light-blue: #7fd0ee;
+  --primary: var(--rp-blue);
+  --grey: #c3c4c7;
+  --black: black;
+  --red: red;
+  --rp-red: #d53e4f;
+  --light-red: pink;
+  --dark-grey: grey;
+  --darker-grey: #303030;
+  --rp-yellow: #fbb21d;
+  --lightgrey: #f0f0f1;
+  --white: white;
+
+  --nav-menu-width: 3rem;
+  --nav-menu-font-size: 2rem;
+  --text-size: 1rem;
+  --title-size: 2rem;
+  --content-width: 50rem;
+  box-sizing: border-box;
+  @media screen and (min-width: 1000px) {
+    --nav-menu-width: 4rem;
+    --nav-menu-font-size: 3rem;
+    --text-size: 1.25rem;
+    --content-width: 55rem;
+    --title-size: 1.5rem;
+  }
+  @media screen and (min-width: 1500px) {
+    --nav-menu-width: 5rem;
+    --nav-menu-font-size: 4rem;
+    --text-size: 1.5rem;
+    --content-width: 60rem;
+    --title-size: 2rem;
+
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.hidden-on-mobile {
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+.hidden-on-tablet {
+  @media (max-width: 1500px) {
+    display: none;
+  }
+}
+
+.react-tabs__tab-list { }
+
+.tab-container {
+  display: flex;
+  width: 100%;
+  max-width: 70vw;
+  justify-content: flex-start;
+  @media screen and ( max-width: 1200px) {
+    justify-content: space-between;
+  }
+}
+
+.react-tabs__tab {
+  background: var(--lightgrey);
+  margin-left: 0.1em;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+
+  cursor: pointer;
+  @media screen and ( max-width: 1200px) {
+    margin-right: -20px;
+  }
+  @media screen and ( max-width: 800px) {
+    margin-right: -30px;
+  }
+}
+
+.react-tabs__tab[aria-selected="false"] {
+    border: 1px solid var(--grey);
+}
+
+.react-tabs__tab--selected {
+  background: var(--white) !important;
+  color: var(--black) !important;
+  outline: none !important;
+  bottom: -3px !important;
+  z-index: 4;
+}
+
+.react-tabs__tab--selected:after {
+  background: var(--white) !important;
+}
+
+a, a:visited, a:hover {
+  color: unset;
+}

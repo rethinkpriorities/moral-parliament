@@ -1,0 +1,10 @@
+pytest
+gunicorn
+flask
+flask_cors
+sympy
+scipy
+numpy
+tabulate
+gspread
+oauth2client

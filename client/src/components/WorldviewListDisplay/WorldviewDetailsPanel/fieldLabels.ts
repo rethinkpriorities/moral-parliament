@@ -1,0 +1,16 @@
+export const fieldLabels: Partial<Record<keyof Worldview, string>> = {
+  recipientHumans: "Humans",
+  recipientBirdsAndMammals: "Birds & Mammals",
+  recipientFishAndReptiles: "Fish & Reptiles",
+  recipientInvertebrates: "Crustaceans & Insects",
+  determinacyExisting: "Existing beings",
+  determinacySoon: "Beings who will soon exist",
+  determinacyEver: "Beings who will someday exist",
+  riskOrderDiscountPos: "Discount for good outcomes",
+  riskOrderDiscountNeg: "Discount for bad outcomes",
+  effectAddGood: "Create goods",
+  effectRemoveBad: "Avert bads",
+  valuePleasantness: "Pleasure and Pain",
+  valueFlourishing: "Flourishing",
+  valueEquity: "Justice and Equity",
+};

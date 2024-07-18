@@ -1,0 +1,3 @@
+interface Parliament {
+  members: Parliamentarian[];
+}
